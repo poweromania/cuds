@@ -417,7 +417,6 @@ cd "$PACKAGES"/ffmpeg-4.4.1/ || exit
 	--enable-pthreads \
 	--enable-libvpx \
 	--enable-libmp3lame \
-	--enable-libfreetype \
     --enable-libopus \
 	--enable-libtheora \
 	--enable-libvorbis \
