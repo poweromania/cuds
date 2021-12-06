@@ -384,7 +384,7 @@ LDFLAGS="-L$WORKSPACE/lib"
 if command -v nvcc > /dev/null ; then
        if build "nv-codec"; then
                download "https://github.com/FFmpeg/nv-codec-headers/releases/download/n11.1.5.0/nv-codec-headers-11.1.5.0.tar.gz" "nv-codec-headers-11.1.5.0.tar.gz"
-               cd "$PACKAGES"/nv-codec-headers-8.2.15.11 || exit
+               cd "$PACKAGES"/nv-codec-headers-11.1.5.0 || exit
                sed -i  "s#PREFIX = /usr/local#PREFIX = ${WORKSPACE}#g" "$PACKAGES"/nv-codec-headers-11.1.5.0/Makefile
                execute make install
                build_done "nv-codec"
