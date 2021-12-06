@@ -405,6 +405,7 @@ cd "$PACKAGES"/ffmpeg-4.3.1/ || exit
     --extra-cflags="$CFLAGS" \
     --extra-ldflags="$LDFLAGS" \
     --extra-libs="-lpthread -lm" \
+    	--enable-libfreetype \
 	--enable-static \
 	--disable-debug \
 	--disable-shared \
