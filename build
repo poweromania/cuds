@@ -405,7 +405,6 @@ cd "$PACKAGES"/ffmpeg-4.3.1/ || exit
     --extra-cflags="$CFLAGS" \
     --extra-ldflags="$LDFLAGS" \
     --extra-libs="-lpthread -lm" \
-    	--enable-libfreetype \
 	--enable-static \
 	--disable-debug \
 	--disable-shared \
@@ -429,6 +428,7 @@ cd "$PACKAGES"/ffmpeg-4.3.1/ || exit
 	--enable-libopencore_amrwb \
 	--enable-libopencore_amrnb \
 	--enable-filters \
+	--enable-libfreetype \
 	--enable-libvidstab \
 	--enable-libaom \
 	--enable-libsrt
